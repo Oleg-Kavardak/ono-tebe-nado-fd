@@ -1,2 +1,270 @@
-/* место для вашего кода */
-/* для первого коммита */
+:root {
+  --index__card-lots-content-padding: 48px 40px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px;
+}
+
+.header__menu {
+  font-size: 18px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 29px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__links-list-item {
+  list-style: circle;
+  padding-left: 4px;
+}
+
+.header__link,
+.link {
+  text-underline-offset: 0.25em;
+}
+
+.header__logo {
+  width: 137px;
+}
+
+.header__logo-image {
+  display: block;
+}
+
+.address {
+  justify-self: end;
+  max-width: 240px;
+  width: 100%;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 135%;
+}
+
+.header__address-links-list-item {
+  list-style: none;
+}
+
+.cover {
+  position: relative;
+  display: grid;
+  gap: 105px;
+  padding: 165px 50px 50px;
+  background: url(../images/cover.jpg) center / cover;
+}
+
+.cover__title {
+  display: grid;
+  gap: 20px;
+  position: relative;
+  font-size: 100px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  line-height: 115%;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: end;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 60%);
+}
+
+.cover__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  color: white;
+}
+
+.no-letter-spacing {
+  letter-spacing: normal;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: normal;
+  word-spacing: 0.85em;
+}
+
+.bet-button {
+  padding: 12px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  text-transform: uppercase;
+  border: solid 1px #fff;
+}
+
+.lots {
+  display: grid;
+  gap: 28px;
+  padding: 180px 24px 155px;
+}
+
+.lots__heading {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 0 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+}
+
+.card_type_film,
+.card_type_book,
+.card_type_picture {
+  display: grid;
+  align-content: space-between;
+  height: 100%;
+}
+
+.card__title {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  line-height: 120%;
+  position: relative;
+}
+
+.card__text {
+  color: #fff;
+  font-size: 20px;
+  line-height: 120%;
+  position: relative;
+}
+
+.card_type_film {
+  background: url(../images/card-lot-01.jpg) center / cover;
+  padding: var(--index__card-lots-content-padding);
+}
+.card_type_book {
+  background: url(../images/card-lot-02.jpg) center / cover;
+  padding: var(--index__card-lots-content-padding);
+}
+
+.card_type_picture {
+  background: url(../images/card-lot-03.jpg) center / cover;
+  padding: var(--index__card-lots-content-padding);
+}
+
+.lots__look-more-link {
+  font-size: 20px;
+  padding: 0 40px;
+  text-underline-offset: 0.3em;
+}
+
+.about {
+  padding: 0 24px;
+}
+
+.about__column {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  gap: 8px 25px;
+  place-items: center;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.about__logo-image {
+  width: 148px;
+}
+
+.about__title {
+  width: 100%;
+  font-size: 40px;
+  padding: 10px 0 0;
+  text-transform: uppercase;
+}
+
+.about__text {
+  grid-column: 2;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.about__text p:first-child {
+  padding: 0 0 24px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 180px 50px 82px;
+}
+
+.footer .address {
+  justify-self: start;
+}
+
+.footer__social-list {
+  display: flex;
+  height: fit-content;
+  justify-content: flex-end;
+  gap: 48px;
+}
+
+.footer__menu {
+  justify-self: center;
+  text-align: center;
+  font-size: 18px;
+  text-underline-offset: 0.25em;
+}
+
+.footer__social-icon {
+  width: 48px;
+}
+
+.footer__menu-list,
+.footer__social-list {
+  list-style: none;
+}
